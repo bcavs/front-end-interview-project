@@ -1,19 +1,19 @@
+import { Group, GroupName, ProductGrid } from './ProductsGroup.styles';
+
 import ProductCard from './ProductCard/ProductCard';
-import { ProductGrid } from './ProductsGroup.styles';
 import PropTypes from 'prop-types';
 import React from 'react';
 
 const ProductsGroup = ({group}) => {
-  // console.log("Products: ", group)
   return(
-    <section>
-      <h2>{group.name}</h2>
+    <Group>
+      <GroupName>{group.name}</GroupName>
       <ProductGrid>
         {group.products && group.products.map((product, i) => (
           <ProductCard product={product} key={`${product}-${i}`}/>
         ))}
       </ProductGrid>
-    </section>
+    </Group>
   )
 };
 

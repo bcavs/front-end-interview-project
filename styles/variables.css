@@ -9,4 +9,6 @@
     --fontSize-subheading: 14px;
     --fontSize-section-heading: 24px; 
     --fontSize-body: var(--fontSize-root);
+
+    --mobile-container-padding: 20px;
 }

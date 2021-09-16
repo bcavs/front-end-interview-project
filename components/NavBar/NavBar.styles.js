@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { queries } from "../../styles/breakpoints";
 import styled from 'styled-components';
 
 export const StyledNavBar = styled.nav`
@@ -12,12 +13,24 @@ export const StyledNavBar = styled.nav`
 `;
 
 export const Links = styled.div`
-    display: flex;
+    display: none;
     flex:1;
     a{
         margin: 0 10px;
         color: var(--color-link);
         text-decoration: none;
+    }
+
+    @media(${queries.min_break_sm}){
+        display: flex;
+    }
+`;
+
+export const MobileMenu = styled.div`
+    display:block;
+    flex:1;
+    @media(${queries.min_break_sm}){
+        display: none;
     }
 `;
 
