@@ -1,7 +1,6 @@
-import { Cart, Links, Logo, MobileMenu, StyledNavBar } from './NavBar.styles';
+import { Cart, Links, MobileMenu, StyledNavBar } from './NavBar.styles';
 
 import Image from "next/image"
-import PropTypes from 'prop-types';
 import React from 'react';
 
 const NavBar = (props) => (
@@ -19,13 +18,5 @@ const NavBar = (props) => (
     </Cart>
   </StyledNavBar>
 );
-
-NavBar.propTypes = {
-  // bla: PropTypes.string,
-};
-
-NavBar.defaultProps = {
-  // bla: 'test',
-};
 
 export default NavBar;

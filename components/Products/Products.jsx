@@ -1,5 +1,4 @@
 import ProductsGroup from './ProductsGroup';
-import PropTypes from 'prop-types';
 import React from 'react';
 
 const Products = (props) => {

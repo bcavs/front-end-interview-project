@@ -11,9 +11,10 @@ export const ImageContainer = styled.div`
     position:relative;
     width:100%;
     height:auto;
-    img{
-        width:100%;
-    }
+`;
+
+export const ProductImage = styled.img`
+  width:100%;
 `;
 
 export const ProductTitle = styled.p`

@@ -1,13 +1,12 @@
-import { DiscountedPrice, ImageContainer, PriceContainer, ProductPrice, ProductTitle, StyledProductCard } from './ProductCard.styles';
+import { DiscountedPrice, ImageContainer, PriceContainer, ProductImage, ProductPrice, ProductTitle, StyledProductCard } from './ProductCard.styles';
 
-import PropTypes from 'prop-types';
 import React from 'react';
 
 const ProductCard = ({product}) => {
   return(
     <StyledProductCard>
       <ImageContainer>
-        <img src={product.assets[0].url} />
+        <ProductImage src={product.assets[0].url} />
       </ImageContainer>
       <ProductTitle>{product.title}</ProductTitle>
       <PriceContainer>
@@ -16,14 +15,6 @@ const ProductCard = ({product}) => {
       </PriceContainer>
     </StyledProductCard>
   )
-};
-
-ProductCard.propTypes = {
-  // bla: PropTypes.string,
-};
-
-ProductCard.defaultProps = {
-  // bla: 'test',
 };
 
 export default ProductCard;
