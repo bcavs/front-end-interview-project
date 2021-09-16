@@ -2,7 +2,7 @@ import Image from "next/image"
 import styled from 'styled-components';
 
 export const StyledNavBar = styled.nav`
-    background-color: black;
+    background-color: var(--color-dark);
     padding: 20px;
     color:white;
     justify-content: space-between;
