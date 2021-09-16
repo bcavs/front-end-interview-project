@@ -1,7 +1,6 @@
 import { Group, GroupName, ProductGrid } from './ProductsGroup.styles';
 
 import ProductCard from './ProductCard/ProductCard';
-import React from 'react';
 
 const ProductsGroup = ({group}) => {
   return(

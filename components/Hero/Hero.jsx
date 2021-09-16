@@ -1,7 +1,5 @@
 import { Content, ImageContainer, StyledHero } from './Hero.styles';
 
-import React from 'react';
-
 const Hero = (props) => (
   <StyledHero>
     <ImageContainer>

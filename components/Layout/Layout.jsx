@@ -1,7 +1,6 @@
 import { Footer, NavBar } from '../../components';
 
 import PropTypes from 'prop-types';
-import React from 'react';
 import { StyledMain } from './Layout.styles';
 
 const Layout = ({children}) => (

@@ -1,7 +1,6 @@
 import {IconContainer, LegalContainer, StyledFooter} from './Footer.styles';
 
 import  Image from "next/image"
-import React from 'react';
 
 const Footer = (props) => (
   <StyledFooter>

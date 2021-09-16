@@ -1,7 +1,5 @@
 import { DiscountedPrice, ImageContainer, PriceContainer, ProductImage, ProductPrice, ProductTitle, StyledProductCard } from './ProductCard.styles';
 
-import React from 'react';
-
 const ProductCard = ({product}) => {
   return(
     <StyledProductCard>

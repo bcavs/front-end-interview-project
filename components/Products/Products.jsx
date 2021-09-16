@@ -1,7 +1,7 @@
 import ProductsGroup from './ProductsGroup';
-import React from 'react';
 
 const Products = (props) => {
+  console.log("Prodc: ", props.products)
   return(
     <section className="container">
       {props.products.groups && props.products.groups.map((group, i) => (

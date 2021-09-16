@@ -1,7 +1,6 @@
 import { Cart, Links, MobileMenu, StyledNavBar } from './NavBar.styles';
 
 import Image from "next/image"
-import React from 'react';
 
 const NavBar = (props) => (
   <StyledNavBar>
