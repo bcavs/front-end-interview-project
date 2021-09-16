@@ -1,5 +1,6 @@
+import { Hero, Layout } from "../components"
+
 import Head from "next/head";
-import Layout from "../components/Layout"
 
 const Index = () => {
   return (
@@ -10,6 +11,7 @@ const Index = () => {
         <link rel="stylesheet" href="https://use.typekit.net/zdz0zoa.css" />
       </Head>
       <Layout>
+        <Hero/>
         <h1>Welcome to the Foxtrot front-end coding project</h1>
       </Layout>
     </div>

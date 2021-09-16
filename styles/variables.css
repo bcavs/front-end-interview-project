@@ -1,0 +1,12 @@
+:root{
+    --color-link: #fff;
+    --color-dark: #121212;
+    --color-grey: #6D7173;
+
+    --fontSize-root: 14px;
+
+    --fontSize-heading: 40px;
+    --fontSize-subheading: 14px;
+    --fontSize-section-heading: 24px; 
+    --fontSize-body: var(--fontSize-root);
+}

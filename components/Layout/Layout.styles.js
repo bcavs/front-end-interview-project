@@ -1,6 +1,6 @@
-// import styled from 'styled-components';
+import styled from 'styled-components';
 
-// export const Test = styled.div`
-//  display: flex;
-// `;
-//
+export const StyledMain = styled.main`
+    margin: 0 auto;
+    max-width: 750px;
+`;

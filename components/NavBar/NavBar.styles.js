@@ -8,6 +8,7 @@ export const StyledNavBar = styled.nav`
     justify-content: space-between;
     display:flex;
     flex-direction: row;
+    align-items: center;
 `;
 
 export const Links = styled.div`
@@ -15,6 +16,8 @@ export const Links = styled.div`
     flex:1;
     a{
         margin: 0 10px;
+        color: var(--color-link);
+        text-decoration: none;
     }
 `;
 

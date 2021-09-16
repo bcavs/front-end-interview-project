@@ -1,14 +1,14 @@
-import Footer from '../Footer';
-import NavBar from '../NavBar';
+import { Footer, NavBar } from '../../components';
+
 import PropTypes from 'prop-types';
 import React from 'react';
-//import { Test } from './Layout.styles';
+import { StyledMain } from './Layout.styles';
 
 const Layout = ({children}) => (
   <>
     <NavBar/>
 
-    <main>{children}</main>
+    <StyledMain>{children}</StyledMain>
     
     <Footer/>
   </>

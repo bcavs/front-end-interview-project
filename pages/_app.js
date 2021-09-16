@@ -1,5 +1,7 @@
-import React from "react";
+import "../styles/variables.css"
+
 import { GlobalStyles } from "../components";
+import React from "react";
 
 const App = ({ Component, pageProps }) => {
   return (
