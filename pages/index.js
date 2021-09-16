@@ -1,8 +1,9 @@
-import { Hero, Layout } from "../components"
+import { Hero, Layout, Products } from "../components"
 
 import Head from "next/head";
+import axios from 'axios'
 
-const Index = () => {
+const Index = ({ data }) => {
   return (
     <div>
       <Head>
@@ -12,10 +13,19 @@ const Index = () => {
       </Head>
       <Layout>
         <Hero/>
-        <h1>Welcome to the Foxtrot front-end coding project</h1>
+        <Products products={data.aisle}/>
       </Layout>
     </div>
   );
 };
 
 export default Index;
+
+export const getStaticProps = async () => {
+  const { data } = await axios.get(`https://api.foxtrotchicago.com/v5/inventory/aisles/224/items?store_id=6`);
+  return {
+    props: {
+      data,
+    },
+  };
+};

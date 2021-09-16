@@ -23,5 +23,7 @@ export const Links = styled.div`
 
 export const Cart = styled.div`
     flex:1;
-    text-align:right;
+    justify-content: flex-end;
+    display:flex;
+    align-items: center;
 `;
