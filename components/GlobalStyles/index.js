@@ -1,5 +1,6 @@
+import { breakpoints, queries } from "../../styles/breakpoints";
+
 import { createGlobalStyle } from "styled-components";
-import { queries } from "../../styles/breakpoints";
 
 const GlobalStyles = createGlobalStyle`
     body {
@@ -24,10 +25,10 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
     }
     .container{
-        padding: 0 var(--mobile-container-padding);
+        padding:0;
         
-        @media(${queries.min_break_sm}){
-            padding:0;
+        @media(max-width: 750px){
+            padding: 0 var(--mobile-container-padding);
         }
     }
 `;
