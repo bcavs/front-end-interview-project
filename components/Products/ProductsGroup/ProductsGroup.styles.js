@@ -1,5 +1,7 @@
+import styled, { css } from 'styled-components';
+
+import Accordion from '@material-ui/core/Accordion';
 import { queries } from "../../../styles/breakpoints";
-import styled from 'styled-components';
 
 export const ProductGrid = styled.div`
     display: grid;
@@ -14,8 +16,32 @@ export const ProductGrid = styled.div`
 
 export const GroupName = styled.h2`
   font-size: var(--fontSize-section-heading);
+  margin: 0;
 `;
 
-export const Group = styled.section`
+export const Group = styled(Accordion)`
     margin-bottom: 4rem;
+
+    ${props => !props.expanded && css`
+        margin-bottom: 0;
+    `}
+
+    // MUI Accordion Overrides
+    box-shadow: none !important;
+    .MuiAccordionSummary-root{
+        padding: 0;
+        :before{
+            display:none !important;
+        }
+    }
+    .MuiSvgIcon-root{
+        width: 40px;
+        height:40px;
+    }
+    .MuiIconButton-root{
+        color:var(--color-dark);
+    }
+    :before{
+        display:none;
+    }
 `;
