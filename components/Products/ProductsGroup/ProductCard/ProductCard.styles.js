@@ -34,10 +34,10 @@ export const ProductPrice = styled.p`
     position:relative;
     ${props => props.discounted && css`
         //If the price is discounted...
-        color:hsl(0, 96%, 73%);
+        color:var(--color-grey);
         :after {
             //Use pseudo :after because line-through is slightly off center
-            border-top: 1.5px solid hsl(0, 96%, 73%);;
+            border-top: 1.5px solid var(--color-grey);
             position: absolute;
             content: "";
             right: 0;

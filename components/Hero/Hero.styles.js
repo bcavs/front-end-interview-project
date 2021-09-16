@@ -9,6 +9,9 @@ export const StyledHero = styled.div`
     
     @media(${queries.min_break_sm}){
         flex-flow:row;   
+        margin: 20px 0;
+    }
+    @media(${queries.min_break_md}){   
         margin: 50px 0;
     }
 `;
